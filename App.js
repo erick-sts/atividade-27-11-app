@@ -14,17 +14,17 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ headerShown: false }} // Remove a barra de navegação
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="Add Task"
           component={TaskAddScreen}
-          options={{ headerShown: false }} // Remove a barra de navegação
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="Edit Task"
           component={TaskEditScreen}
-          options={{ headerShown: false }} // Remove a barra de navegação
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

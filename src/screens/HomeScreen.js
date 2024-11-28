@@ -45,9 +45,11 @@ export default function HomeScreen({ navigation }) {
     <SafeAreaView style={styles.container}>
       <TouchableOpacity
         style={styles.addButton}
-        onPress={() => navigation.navigate("Add Task", { onTaskAdded: fetchTasks })} // Passa a função para atualização
+        onPress={() =>
+          navigation.navigate("Add Task", { onTaskAdded: fetchTasks })
+        }
       >
-        <Text style={styles.addButtonText}>Adicionar Tarefa</Text>
+        <Text style={styles.addButtonText}>Adicionar Tarefa 🆕</Text>
       </TouchableOpacity>
       <FlatList
         data={tasks}
@@ -76,6 +78,8 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: "center",
     margin: 20,
+    width: "50%",
+    alignSelf: "center",
   },
   addButtonText: {
     color: "white",

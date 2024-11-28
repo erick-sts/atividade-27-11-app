@@ -24,7 +24,7 @@ export default function TaskEditScreen({ route, navigation }) {
       try {
         await axios.put(`${API_URL}/${task.id}`, { title, description });
         Alert.alert("Sucesso", "Tarefa atualizada com sucesso!");
-        onUpdate(); // Chama a função para atualizar a lista de tarefas
+        onUpdate();
         navigation.goBack();
       } catch (error) {
         Alert.alert("Erro", "Não foi possível atualizar a tarefa.");

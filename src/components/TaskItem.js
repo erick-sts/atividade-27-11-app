@@ -8,10 +8,10 @@ export default function TaskItem({ task, onEdit, onDelete }) {
       <Text style={styles.description}>{task.description}</Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.editButton} onPress={onEdit}>
-          <Text style={styles.buttonText}>Editar</Text>
+          <Text style={styles.buttonText}>Editar ✏</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.deleteButton} onPress={onDelete}>
-          <Text style={styles.buttonText}>Deletar</Text>
+          <Text style={styles.buttonText}>Deletar 🗑</Text>
         </TouchableOpacity>
       </View>
     </View>
